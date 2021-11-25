@@ -1,7 +1,7 @@
 
 public class Throw 
 {
-	public static void validate (int age)
+	 static void validate (int age)
 	
 	{
 		if (age<18)
@@ -19,8 +19,12 @@ public class Throw
 	
 	public static void main(String args[])
 	{
-		validate(15);
-		
+		try {
+			validate(17);
+		}
+		catch (ArithmeticException e)
+		{
 		System.out.println(" rest of the code excute..");
 		}
 	}
+}
